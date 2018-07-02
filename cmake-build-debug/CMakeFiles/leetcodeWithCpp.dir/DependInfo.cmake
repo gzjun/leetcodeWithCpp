@@ -4,13 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/guozijun/Documents/leetcode/Solution.cpp" "/Users/guozijun/Documents/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/Solution.cpp.o"
-  "/Users/guozijun/Documents/leetcode/main.cpp" "/Users/guozijun/Documents/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/main.cpp.o"
+  "/Users/guozijun/Documents/leetcodeWithCpp/Solution.cpp" "/Users/guozijun/Documents/leetcodeWithCpp/cmake-build-debug/CMakeFiles/leetcodeWithCpp.dir/Solution.cpp.o"
+  "/Users/guozijun/Documents/leetcodeWithCpp/main.cpp" "/Users/guozijun/Documents/leetcodeWithCpp/cmake-build-debug/CMakeFiles/leetcodeWithCpp.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../."
   )
 
 # Targets to which this target links.

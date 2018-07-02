@@ -12,9 +12,7 @@ class Solution {
 public:
     std::vector<std::vector<int>> threeSum(std::vector<int>& nums);
     std::vector<std::vector<int>> twoSum(std::vector<int> &nums, int target);
-    std::vector<std::vector<int>> twoSum(std::vector<int> &nums,int target,int start,int end);
+    int lengthOfLongestSubstring(std::string s);
 };
-
-
 
 #endif //LEETCODE_SOLUTION_H

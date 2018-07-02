@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/guozijun/Documents/leetcodeWithCpp/Solution.cpp
+iostream
+-
+Solution.h
+/Users/guozijun/Documents/leetcodeWithCpp/Solution.h
+vector
+-
+
+/Users/guozijun/Documents/leetcodeWithCpp/Solution.h
+vector
+-
+
+/Users/guozijun/Documents/leetcodeWithCpp/main.cpp
+iostream
+-
+Solution.h
+/Users/guozijun/Documents/leetcodeWithCpp/Solution.h
+vector
+-
+

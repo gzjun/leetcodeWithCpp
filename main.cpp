@@ -13,6 +13,10 @@ int main() {
         }
         std::cout<<""<<std::endl;
     }
+
+    std::string str = "pwwkew";
+    std::cout<<"lengthOfLongestSubstring is: "<<s->lengthOfLongestSubstring(str)<<std::endl;
+
     std::cout<<"end"<<std::endl;
     return 0;
 }

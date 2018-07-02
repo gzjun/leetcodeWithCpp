@@ -21,11 +21,6 @@ std::vector<std::vector<int>> Solution::threeSum(std::vector<int>& nums)
         while(low<high) {
             if(nums[low]+nums[high]+nums[i]==0) {
                 std::vector<int> tup={nums[i],nums[low],nums[high]};
-                /*
-                tup.push_back(nums[i]);
-                tup.push_back(nums[high]);
-                tup.push_back(nums[low]);
-                 */
                 low++;
                 high--;
                 res.push_back(tup);
@@ -46,7 +41,6 @@ std::vector<std::vector<int>> Solution::threeSum(std::vector<int>& nums)
 
 std::vector<std::vector<int>> Solution::twoSum(std::vector<int>&nums,int target)
 {
-
     std::vector<std::vector<int>> res;
     std::sort(nums.begin(),nums.end());
     for(unsigned long  i=0, j=nums.size()-1; i<j;)
@@ -72,29 +66,21 @@ std::vector<std::vector<int>> Solution::twoSum(std::vector<int>&nums,int target)
     return res;
 }
 
-std::vector<std::vector<int>> Solution::twoSum(std::vector<int> &nums,int target,int start,int end)
-{
-    std::cout<<"start is: "<<start<<" end is: "<<end<<std::endl;
-    std::vector<std::vector<int>> res;
-    for(int  i=start, j=end; i<j;)
-    {
-        std::vector<int> twoVector;
-        if(nums[i]+nums[j]==target)
-        {
-            twoVector.push_back(nums[i]);
-            twoVector.push_back(nums[j]);
+int Solution::lengthOfLongestSubstring(std::string s) {
+    std::vector<bool> nums(256);
+    int i=0,j=0;
+    int max=0;
+    while (i<s.size()){
+        if(!nums[s.at(i)]){
+            nums[s.at(i)]=true;
             i++;
-            j--;
-            res.push_back(twoVector);
-            std::cout<<"found one pair"<<std::endl;
-        } else if(nums[i]+nums[j]>target)
-        {
-            j--;
         }
         else
         {
-            i++;
+            max = std::max(max,i-j);
+            nums[s.at(j)]= false;
+            j++;
         }
     }
-    return res;
+    return std::max(max,i-j);
 }

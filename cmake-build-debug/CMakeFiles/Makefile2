@@ -54,45 +54,45 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/guozijun/Documents/leetcode
+CMAKE_SOURCE_DIR = /Users/guozijun/Documents/leetcodeWithCpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/guozijun/Documents/leetcode/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/guozijun/Documents/leetcodeWithCpp/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/leetcode.dir
+# Target rules for target CMakeFiles/leetcodeWithCpp.dir
 
 # All Build rule for target.
-CMakeFiles/leetcode.dir/all:
-	$(MAKE) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/depend
-	$(MAKE) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/guozijun/Documents/leetcode/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target leetcode"
-.PHONY : CMakeFiles/leetcode.dir/all
+CMakeFiles/leetcodeWithCpp.dir/all:
+	$(MAKE) -f CMakeFiles/leetcodeWithCpp.dir/build.make CMakeFiles/leetcodeWithCpp.dir/depend
+	$(MAKE) -f CMakeFiles/leetcodeWithCpp.dir/build.make CMakeFiles/leetcodeWithCpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/guozijun/Documents/leetcodeWithCpp/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target leetcodeWithCpp"
+.PHONY : CMakeFiles/leetcodeWithCpp.dir/all
 
 # Include target in all.
-all: CMakeFiles/leetcode.dir/all
+all: CMakeFiles/leetcodeWithCpp.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/leetcode.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/guozijun/Documents/leetcode/cmake-build-debug/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/leetcode.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/guozijun/Documents/leetcode/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/leetcode.dir/rule
+CMakeFiles/leetcodeWithCpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/guozijun/Documents/leetcodeWithCpp/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/leetcodeWithCpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/guozijun/Documents/leetcodeWithCpp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/leetcodeWithCpp.dir/rule
 
 # Convenience name for target.
-leetcode: CMakeFiles/leetcode.dir/rule
+leetcodeWithCpp: CMakeFiles/leetcodeWithCpp.dir/rule
 
-.PHONY : leetcode
-
-# clean rule for target.
-CMakeFiles/leetcode.dir/clean:
-	$(MAKE) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/clean
-.PHONY : CMakeFiles/leetcode.dir/clean
+.PHONY : leetcodeWithCpp
 
 # clean rule for target.
-clean: CMakeFiles/leetcode.dir/clean
+CMakeFiles/leetcodeWithCpp.dir/clean:
+	$(MAKE) -f CMakeFiles/leetcodeWithCpp.dir/build.make CMakeFiles/leetcodeWithCpp.dir/clean
+.PHONY : CMakeFiles/leetcodeWithCpp.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/leetcodeWithCpp.dir/clean
 
 .PHONY : clean
 
