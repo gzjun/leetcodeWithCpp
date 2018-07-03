@@ -41,6 +41,7 @@ std::vector<std::vector<int>> Solution::threeSum(std::vector<int>& nums)
     return res;
 }
 
+
 std::vector<std::vector<int>> Solution::twoSum(std::vector<int>&nums,int target)
 {
     std::vector<std::vector<int>> res;
@@ -68,6 +69,7 @@ std::vector<std::vector<int>> Solution::twoSum(std::vector<int>&nums,int target)
     return res;
 }
 
+
 int Solution::lengthOfLongestSubstring(std::string s) {
     std::vector<bool> nums(256);
     int i=0,j=0;
@@ -86,6 +88,7 @@ int Solution::lengthOfLongestSubstring(std::string s) {
     }
     return std::max(max,i-j);
 }
+
 
 void Solution::setZeroes(std::vector<std::vector<int>> &matrix)
 {
@@ -116,5 +119,4 @@ void Solution::setZeroes(std::vector<std::vector<int>> &matrix)
             matrix[i][col]=0;
         }
     }
-
 }
