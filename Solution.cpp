@@ -2,9 +2,11 @@
 // Created by guozijun on 2018/7/2.
 //
 
-#include<iostream>
+#include <iostream>
 #include "Solution.h"
-#include<vector>
+#include <vector>
+#include <set>
+
 
 std::vector<std::vector<int>> Solution::threeSum(std::vector<int>& nums)
 {
@@ -83,4 +85,36 @@ int Solution::lengthOfLongestSubstring(std::string s) {
         }
     }
     return std::max(max,i-j);
+}
+
+void Solution::setZeroes(std::vector<std::vector<int>> &matrix)
+{
+    if(matrix.empty() || matrix[0].empty())
+        return;
+    std::set<int> iRow;
+    std::set<int> iCol;
+
+    for (int i = 0; i<matrix.size(); ++i) {
+        for (int j = 0; j <matrix[0].size() ; ++j) {
+            if(matrix[i][j]==0){
+                iRow.insert(i);
+                iCol.insert(j);
+            }
+        }
+    }
+
+    for (int row : iRow) {
+        for (int i = 0; i <matrix[0].size() ; ++i)
+        {
+                matrix[row][i]=0;
+        }
+    }
+
+    for (int col : iCol) {
+        for (int i = 0; i <matrix.size() ; ++i)
+        {
+            matrix[i][col]=0;
+        }
+    }
+
 }

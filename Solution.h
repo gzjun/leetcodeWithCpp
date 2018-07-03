@@ -13,6 +13,7 @@ public:
     std::vector<std::vector<int>> threeSum(std::vector<int>& nums);
     std::vector<std::vector<int>> twoSum(std::vector<int> &nums, int target);
     int lengthOfLongestSubstring(std::string s);
+    void setZeroes(std::vector<std::vector<int>>& matrix);
 };
 
 #endif //LEETCODE_SOLUTION_H
