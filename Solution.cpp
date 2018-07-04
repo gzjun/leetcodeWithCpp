@@ -120,3 +120,47 @@ void Solution::setZeroes(std::vector<std::vector<int>> &matrix)
         }
     }
 }
+
+std::string Solution::serialize(TreeNode *root) {
+    return std::string();
+}
+
+TreeNode *Solution::deserialize(std::string data) {
+    return nullptr;
+}
+
+bool Solution::isUgly(int num) {
+    if (num==0)
+        return false;
+    while (num != 1) {
+        if (num %5 ==0){
+            num=num/5;
+        } else if (num %2 == 0){
+            num=num/2;
+        } else if(num %3 == 0){
+            num=num/3;
+        }
+        else
+            return false;
+    }
+    return true;
+}
+
+bool less_function(std::pair<int,int>a, std::pair<int,int>b)
+{
+    return a.first<b.first;
+}
+
+int Solution::findMinArrowShots(std::vector<std::pair<int, int>> &points) {
+    int res=0;
+    int arror = 0;
+    std::sort(points.begin(),points.end(),less_function);
+    for (auto i = int(points.size()-1); i >=0 ;) {
+        res++;
+        arror = points[i].first;
+        while(points[i].first<=arror && points[i].second>=arror){
+            i--;
+        }
+    }
+    return res;
+}
